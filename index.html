@@ -1,0 +1,1109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Serenity Shores — Luxury Lodge & Resort Collection</title>
+  <meta name="description" content="An immersive escape into nature. Discover three architecturally distinct luxury lodge properties with bespoke stays and breathtaking surroundings." />
+  
+  <!-- Google Fonts: Playfair Display + Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  
+  <link rel="stylesheet" href="css/styles.css?v=2" />
+  <!-- GSAP Animation Engine -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════════════ -->
+  <!-- ERA RESIDENCE SIGNATURE INITIAL PRELOADER       -->
+  <!-- ═══════════════════════════════════════════════ -->
+  <div id="eraPreloader" class="era-preloader" aria-hidden="false">
+    <!-- Architectural Geometric Frame Lines & Crosshair Corners -->
+    <div class="era-preloader__decor">
+      <div class="era-frame-corner era-frame-corner--tl"></div>
+      <div class="era-frame-corner era-frame-corner--tr"></div>
+      <div class="era-frame-corner era-frame-corner--bl"></div>
+      <div class="era-frame-corner era-frame-corner--br"></div>
+      <div class="era-frame-line era-frame-line--top"></div>
+      <div class="era-frame-line era-frame-line--bottom"></div>
+      <div class="era-frame-line era-frame-line--left"></div>
+      <div class="era-frame-line era-frame-line--right"></div>
+    </div>
+
+    <!-- Ambient Glow Backlight -->
+    <div class="era-preloader__glow"></div>
+
+    <div class="era-preloader__content">
+      <!-- 01. Top Star Emblem -->
+      <div class="era-preloader__top">
+        <div class="era-preloader__emblem-wrap">
+          <div class="era-preloader__star-badge">
+            <svg class="era-star-svg" viewBox="0 0 40 40" fill="none">
+              <path d="M20 0L23.8 16.2L40 20L23.8 23.8L20 40L16.2 23.8L0 20L16.2 16.2L20 0Z" fill="currentColor"/>
+            </svg>
+          </div>
+          <span class="era-preloader__brand-mini">SERENITY SHORES</span>
+        </div>
+      </div>
+
+      <!-- 02. Center Typography & 3D Character Reveal -->
+      <div class="era-preloader__center">
+        <div class="era-preloader__side-tag era-preloader__side-tag--left">
+          <span>✦ LUXURY RETREATS</span>
+        </div>
+
+        <div class="era-preloader__brand-lockup">
+          <div class="era-split-line era-split-line--1">
+            <span class="era-char">S</span><span class="era-char">E</span><span class="era-char">R</span><span class="era-char">E</span><span class="era-char">N</span><span class="era-char">I</span><span class="era-char">T</span><span class="era-char">Y</span>
+          </div>
+          <div class="era-split-line era-split-line--2">
+            <span class="era-char era-char--gold">S</span><span class="era-char era-char--gold">H</span><span class="era-char era-char--gold">O</span><span class="era-char era-char--gold">R</span><span class="era-char era-char--gold">E</span><span class="era-char era-char--gold">S</span>
+          </div>
+          <div class="era-preloader__subtag">
+            <span>CURATED NATURE RETREATS • EST. 2026</span>
+          </div>
+        </div>
+
+        <div class="era-preloader__side-tag era-preloader__side-tag--right">
+          <span>SANCTUARY COLLECTION ✦</span>
+        </div>
+      </div>
+
+      <!-- 03. Bottom Progress Bar & Brand Statement -->
+      <div class="era-preloader__bottom">
+        <div class="era-preloader__progress-bar">
+          <div class="era-preloader__progress-fill" id="eraProgressFill"></div>
+        </div>
+        <p class="era-preloader__tagline">
+          Serenity Shores &mdash; A sanctuary of tranquility, natural wonder, and bespoke luxury.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Ambient Parallax Background Accents -->
+  <div class="parallax-orb parallax-orb--1" data-parallax-speed="-0.15"></div>
+  <div class="parallax-orb parallax-orb--2" data-parallax-speed="0.2"></div>
+  <div class="parallax-orb parallax-orb--3" data-parallax-speed="-0.1"></div>
+
+  <!-- ═══════════════════════════════════════════════ -->
+  <!-- GLASS NAVIGATION                                -->
+  <!-- ═══════════════════════════════════════════════ -->
+  <header id="navbar" class="navbar">
+    <div class="navbar__container">
+      <a href="#brand-stage" class="navbar__logo" aria-label="Back to Serenity Shores Brand Stage">
+        <span class="navbar__logo-icon">✦</span>
+        <span class="navbar__logo-text">Serenity<span>Shores</span></span>
+      </a>
+
+      <nav class="navbar__links" id="navLinks">
+        <a href="#hero" class="navbar__link active">Home</a>
+        <a href="#about" class="navbar__link">Our Story</a>
+        <a href="#properties" class="navbar__link" data-prop="azure-cliff">Azure Cliff</a>
+        <a href="#properties" class="navbar__link" data-prop="emerald-canopy">Emerald Canopy</a>
+        <a href="#properties" class="navbar__link" data-prop="golden-sands">Golden Sands</a>
+        <a href="#amenities" class="navbar__link">Experiences</a>
+        <a href="#testimonials" class="navbar__link">Stories</a>
+        <a href="#contact" class="navbar__link">Contact</a>
+      </nav>
+
+      <a href="https://wa.me/1234567890?text=Hello!%20I'd%20like%20to%20inquire%20about%20your%20luxury%20lodges." class="btn btn--whatsapp navbar__cta" target="_blank" rel="noopener">
+        <svg class="btn__icon" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        WhatsApp Inquiry
+      </a>
+
+      <button class="navbar__burger" id="navBurger" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <!-- Scroll-Driven Global Progress Bar -->
+    <div class="scroll-progress-bar" id="scrollProgressBar"></div>
+  </header>
+
+  <!-- ═══════════════════════════════════════════════ -->
+  <!-- 01. STANDALONE BRAND STAGE (NAME ONLY AREA)      -->
+  <!-- ═══════════════════════════════════════════════ -->
+  <section id="brand-stage" class="brand-stage">
+    <div class="brand-stage__bg"></div>
+    
+    <!-- Floating Light Particles -->
+    <div class="hero__glints">
+      <span class="hero__glint hero__glint--1">✦</span>
+      <span class="hero__glint hero__glint--2">✦</span>
+      <span class="hero__glint hero__glint--3">✦</span>
+    </div>
+
+    <div class="brand-stage__content container">
+      <!-- Luxury Emblem / Eyebrow -->
+      <div class="hero__emblem">
+        <span class="hero__emblem-line"></span>
+        <span class="hero__emblem-text">✦ Luxury Sanctuary Collection ✦</span>
+        <span class="hero__emblem-line"></span>
+      </div>
+
+      <!-- Main Animated Brand Name -->
+      <h1 class="hero__brand-title" id="heroBrandTitle" aria-label="Serenity Shores">
+        <span class="brand-line brand-line--1">
+          <span class="char">S</span><span class="char">E</span><span class="char">R</span><span class="char">E</span><span class="char">N</span><span class="char">I</span><span class="char">T</span><span class="char">Y</span>
+        </span>
+        <span class="brand-line brand-line--2">
+          <span class="char char--accent">S</span><span class="char char--accent">H</span><span class="char char--accent">O</span><span class="char char--accent">R</span><span class="char char--accent">E</span><span class="char char--accent">S</span>
+        </span>
+      </h1>
+
+      <p class="brand-stage__descriptor">
+        Curated Nature Retreats &bull; Coastal &bull; Canopy &bull; Island
+      </p>
+
+      <!-- Scroll down cue into Hero -->
+      <a href="#hero" class="brand-stage__scroll-cue" aria-label="Scroll down to explore sanctuaries">
+        <span>Scroll to Explore</span>
+        <div class="hero__scroll-arrow"></div>
+      </a>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════ -->
+  <!-- 02. HERO SECTION: RESORT & SANCTUARY OVERVIEW    -->
+  <!-- ═══════════════════════════════════════════════ -->
+  <section id="hero" class="hero">
+    <div class="hero__parallax-bg" data-parallax="0.35"></div>
+    <div class="hero__overlay"></div>
+
+    <div class="hero__content container" data-parallax-content="0.18">
+      <div class="hero__badge reveal reveal--up">
+        <span class="hero__badge-dot"></span>
+        <span>Exclusive 2026 Lodge Sanctuary Collection</span>
+      </div>
+
+      <h2 class="hero__headline reveal reveal--up" data-delay="100">
+        Immerse Yourself in<br /><em>Untouched</em> Natural Luxury
+      </h2>
+
+      <!-- Brand Subtitle / Location Triad -->
+      <p class="hero__brand-tagline reveal reveal--up" data-delay="200">
+        <span>Goa Cliffside</span> • <span>Kerala Rainforest</span> • <span>Andaman Island</span>
+      </p>
+
+      <p class="hero__brand-desc reveal reveal--up" data-delay="300">
+        Three private architectural masterworks hidden in coastal cliffs, misty rainforest canopies, and private white-sand shores.
+      </p>
+
+      <!-- Glass Action Buttons -->
+      <div class="hero__brand-actions reveal reveal--up" data-delay="400">
+        <a href="#properties" class="btn btn--primary btn--lg">
+          <span>Explore 3 Sanctuaries</span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="https://wa.me/1234567890?text=Hello!%20I'd%20like%20to%20inquire%20about%20your%20luxury%20resort%20collection." class="btn btn--whatsapp btn--lg" target="_blank" rel="noopener">
+          <svg class="btn__icon" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          <span>WhatsApp Inquiry</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════ -->
+  <!-- ABOUT SECTION WITH PARALLAX IMAGES              -->
+  <!-- ═══════════════════════════════════════════════ -->
+  <section id="about" class="about section">
+    <div class="parallax-watermark" data-parallax-text="-0.1">SANCTUARY</div>
+    <div class="container">
+      <div class="about__grid">
+        <div class="about__images reveal reveal--left">
+          <div class="about__img about__img--main" data-parallax-layer="0.12">
+            <img src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=700&h=900&fit=crop" alt="Resort architecture at dusk" loading="lazy" />
+          </div>
+          <div class="about__img about__img--accent" data-parallax-layer="-0.18">
+            <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=450&h=600&fit=crop" alt="Luxury pool reflection" loading="lazy" />
+          </div>
+          <div class="about__experience-badge reveal reveal--scale" data-parallax-layer="0.25">
+            <span class="about__experience-number" data-count="15">0</span>
+            <span class="about__experience-label">Years of<br/>Excellence</span>
+          </div>
+        </div>
+
+        <div class="about__text reveal reveal--right">
+          <div class="section__pill">Crafted By Nature</div>
+          <h2 class="section__title">Where Architecture Meets the <em>Wild</em></h2>
+          <p class="about__lead">
+            Serenity Shores was founded with a singular vision: creating sustainable, ultra-luxury lodge properties where nature takes center stage.
+          </p>
+          <p>
+            Whether elevated in dense rainforest canopies, cantilevered over dramatic sea cliffs, or opening directly onto untouched island sands, our 3 distinct properties deliver unmatched privacy, bespoke gastronomy, and warm hospitality.
+          </p>
+          
+          <div class="about__stats">
+            <div class="about__stat">
+              <span class="about__stat-number" data-count="3">0</span>
+              <span class="about__stat-text">Distinct Sanctuaries</span>
+            </div>
+            <div class="about__stat">
+              <span class="about__stat-number" data-count="500">0</span>
+              <span class="about__stat-text">Guests Welcomed / Yr</span>
+            </div>
+            <div class="about__stat">
+              <span class="about__stat-number" data-count="4.9" data-decimal="true">0</span>
+              <span class="about__stat-text">Guest Rating</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════ -->
+  <!-- PARALLAX INTERSTITIAL BANNER                    -->
+  <!-- ═══════════════════════════════════════════════ -->
+  <section class="parallax-strip">
+    <div class="parallax-strip__bg" data-parallax="0.45"></div>
+    <div class="parallax-strip__overlay"></div>
+    <div class="container parallax-strip__content reveal reveal--up">
+      <span class="parallax-strip__caption">Curated Architecture</span>
+      <h3 class="parallax-strip__title">"True luxury is silence, space, and a profound connection to the earth."</h3>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════ -->
+  <!-- 04. 3D GLOBE PROPERTIES SHOWCASE (GETLAYERS AI STUDIO STYLE) -->
+  <!-- ═══════════════════════════════════════════════ -->
+  <section id="properties" class="globe-properties section">
+    <div class="parallax-watermark" data-parallax-text="0.12">SANCTUARIES</div>
+    <div class="globe-ambient-glow"></div>
+
+    <div class="container">
+      <div class="section__header reveal reveal--up">
+        <div class="section__pill">✦ 3D Sanctuary Globe ✦</div>
+        <h2 class="section__title">Explore the <em>Sanctuary Collection</em></h2>
+        <p class="section__subtitle">Rotate the 3D globe to discover our 3 handcrafted destinations. Click any card to expand into the full immersive showcase.</p>
+      </div>
+
+      <!-- Globe Control Bar & Sanctuary Switcher Tabs -->
+      <div class="globe-controls-bar reveal reveal--up" data-delay="100">
+        <button class="globe-nav-btn globe-nav-btn--prev" id="globePrevBtn" aria-label="Rotate to previous sanctuary">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+        </button>
+
+        <div class="globe-tabs" id="globeTabs">
+          <button class="globe-tab active" data-index="0" data-target="prop-azure">
+            <span class="globe-tab__icon">✦</span>
+            <span class="globe-tab__num">01</span>
+            <div class="globe-tab__info">
+              <strong>Azure Cliff Villa</strong>
+              <small>Goa Coastal Highlands</small>
+            </div>
+          </button>
+
+          <button class="globe-tab" data-index="1" data-target="prop-emerald">
+            <span class="globe-tab__icon">✦</span>
+            <span class="globe-tab__num">02</span>
+            <div class="globe-tab__info">
+              <strong>Emerald Canopy</strong>
+              <small>Kerala Rainforest</small>
+            </div>
+          </button>
+
+          <button class="globe-tab" data-index="2" data-target="prop-golden">
+            <span class="globe-tab__icon">✦</span>
+            <span class="globe-tab__num">03</span>
+            <div class="globe-tab__info">
+              <strong>Golden Sands</strong>
+              <small>Andaman Beachfront</small>
+            </div>
+          </button>
+        </div>
+
+        <button class="globe-nav-btn globe-nav-btn--next" id="globeNextBtn" aria-label="Rotate to next sanctuary">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </button>
+      </div>
+
+      <!-- Interaction Cue Pill -->
+      <div class="globe-drag-cue">
+        <div class="globe-drag-cue__pill">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M3 12h18M8 7l-5 5 5 5M16 7l5 5-5 5"/></svg>
+          <span>Scroll Horizontally or Drag to Explore Sanctuaries ↔</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 3D GLOBE / CYLINDRICAL STAGE -->
+    <div class="globe-stage-wrapper" id="globeStageWrapper">
+      <div class="globe-viewport" id="globeViewport">
+        <div class="globe-ring" id="globeRing">
+          
+          <!-- Card 1: Azure Cliff Villa -->
+          <article class="globe-card" data-index="0" data-property="azure" data-target="prop-azure" tabindex="0" role="button" aria-label="Explore Azure Cliff Villa">
+            <div class="globe-card__glass">
+              <div class="globe-card__glow-border"></div>
+              <div class="globe-card__header">
+                <span class="globe-card__tag">✦ 01 · Coastal Cliff</span>
+                <span class="globe-card__rating">★ 4.98</span>
+              </div>
+              <div class="globe-card__media">
+                <img src="https://images.unsplash.com/photo-1582719508461-905c673771fd?w=700&h=480&fit=crop" alt="Azure Cliff Villa" loading="lazy" />
+                <div class="globe-card__media-overlay"></div>
+                <div class="globe-card__sparkle">✦</div>
+                <span class="globe-card__view-btn">
+                  <span>Explore Details</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M7 17L17 7M7 7h10v10"/></svg>
+                </span>
+              </div>
+              <div class="globe-card__body">
+                <h3 class="globe-card__title">Azure Cliff Villa</h3>
+                <p class="globe-card__subtitle">Goa Coastal Highlands &bull; 180ft Elevation</p>
+                <div class="globe-card__specs">
+                  <span>4 King Suites</span>
+                  <span>&bull;</span>
+                  <span>8 Guests</span>
+                  <span>&bull;</span>
+                  <span>Infinity Pool</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 2: Emerald Canopy Retreat -->
+          <article class="globe-card" data-index="1" data-property="emerald" data-target="prop-emerald" tabindex="0" role="button" aria-label="Explore Emerald Canopy Retreat">
+            <div class="globe-card__glass">
+              <div class="globe-card__glow-border"></div>
+              <div class="globe-card__header">
+                <span class="globe-card__tag">✦ 02 · Canopy Treehouse</span>
+                <span class="globe-card__rating">★ 4.96</span>
+              </div>
+              <div class="globe-card__media">
+                <img src="https://images.unsplash.com/photo-1618773928121-c32242e63f39?w=700&h=480&fit=crop" alt="Emerald Canopy Retreat" loading="lazy" />
+                <div class="globe-card__media-overlay"></div>
+                <div class="globe-card__sparkle">✦</div>
+                <span class="globe-card__view-btn">
+                  <span>Explore Details</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M7 17L17 7M7 7h10v10"/></svg>
+                </span>
+              </div>
+              <div class="globe-card__body">
+                <h3 class="globe-card__title">Emerald Canopy Retreat</h3>
+                <p class="globe-card__subtitle">Western Ghats, Wayanad &bull; Rainforest Haven</p>
+                <div class="globe-card__specs">
+                  <span>3 Chalets</span>
+                  <span>&bull;</span>
+                  <span>6 Guests</span>
+                  <span>&bull;</span>
+                  <span>Ayurvedic Spa</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 3: Golden Sands Bungalow -->
+          <article class="globe-card" data-index="2" data-property="golden" data-target="prop-golden" tabindex="0" role="button" aria-label="Explore Golden Sands Bungalow">
+            <div class="globe-card__glass">
+              <div class="globe-card__glow-border"></div>
+              <div class="globe-card__header">
+                <span class="globe-card__tag">✦ 03 · Island Beachfront</span>
+                <span class="globe-card__rating">★ 4.99</span>
+              </div>
+              <div class="globe-card__media">
+                <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=700&h=480&fit=crop" alt="Golden Sands Bungalow" loading="lazy" />
+                <div class="globe-card__media-overlay"></div>
+                <div class="globe-card__sparkle">✦</div>
+                <span class="globe-card__view-btn">
+                  <span>Explore Details</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M7 17L17 7M7 7h10v10"/></svg>
+                </span>
+              </div>
+              <div class="globe-card__body">
+                <h3 class="globe-card__title">Golden Sands Bungalow</h3>
+                <p class="globe-card__subtitle">Havelock Island, Andaman &bull; Pristine Sands</p>
+                <div class="globe-card__specs">
+                  <span>2 Bungalows</span>
+                  <span>&bull;</span>
+                  <span>4 Guests</span>
+                  <span>&bull;</span>
+                  <span>Private Beach</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 4 (Continuous 360 ring duplicate): Azure Cliff Villa -->
+          <article class="globe-card" data-index="0" data-property="azure" data-target="prop-azure" tabindex="0" role="button" aria-label="Explore Azure Cliff Villa">
+            <div class="globe-card__glass">
+              <div class="globe-card__glow-border"></div>
+              <div class="globe-card__header">
+                <span class="globe-card__tag">✦ 01 · Coastal Cliff</span>
+                <span class="globe-card__rating">★ 4.98</span>
+              </div>
+              <div class="globe-card__media">
+                <img src="https://images.unsplash.com/photo-1582719508461-905c673771fd?w=700&h=480&fit=crop" alt="Azure Cliff Villa" loading="lazy" />
+                <div class="globe-card__media-overlay"></div>
+                <div class="globe-card__sparkle">✦</div>
+                <span class="globe-card__view-btn">
+                  <span>Explore Details</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M7 17L17 7M7 7h10v10"/></svg>
+                </span>
+              </div>
+              <div class="globe-card__body">
+                <h3 class="globe-card__title">Azure Cliff Villa</h3>
+                <p class="globe-card__subtitle">Goa Coastal Highlands &bull; 180ft Elevation</p>
+                <div class="globe-card__specs">
+                  <span>4 King Suites</span>
+                  <span>&bull;</span>
+                  <span>8 Guests</span>
+                  <span>&bull;</span>
+                  <span>Infinity Pool</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 5: Emerald Canopy Retreat -->
+          <article class="globe-card" data-index="1" data-property="emerald" data-target="prop-emerald" tabindex="0" role="button" aria-label="Explore Emerald Canopy Retreat">
+            <div class="globe-card__glass">
+              <div class="globe-card__glow-border"></div>
+              <div class="globe-card__header">
+                <span class="globe-card__tag">✦ 02 · Canopy Treehouse</span>
+                <span class="globe-card__rating">★ 4.96</span>
+              </div>
+              <div class="globe-card__media">
+                <img src="https://images.unsplash.com/photo-1618773928121-c32242e63f39?w=700&h=480&fit=crop" alt="Emerald Canopy Retreat" loading="lazy" />
+                <div class="globe-card__media-overlay"></div>
+                <div class="globe-card__sparkle">✦</div>
+                <span class="globe-card__view-btn">
+                  <span>Explore Details</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M7 17L17 7M7 7h10v10"/></svg>
+                </span>
+              </div>
+              <div class="globe-card__body">
+                <h3 class="globe-card__title">Emerald Canopy Retreat</h3>
+                <p class="globe-card__subtitle">Western Ghats, Wayanad &bull; Rainforest Haven</p>
+                <div class="globe-card__specs">
+                  <span>3 Chalets</span>
+                  <span>&bull;</span>
+                  <span>6 Guests</span>
+                  <span>&bull;</span>
+                  <span>Ayurvedic Spa</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 6: Golden Sands Bungalow -->
+          <article class="globe-card" data-index="2" data-property="golden" data-target="prop-golden" tabindex="0" role="button" aria-label="Explore Golden Sands Bungalow">
+            <div class="globe-card__glass">
+              <div class="globe-card__glow-border"></div>
+              <div class="globe-card__header">
+                <span class="globe-card__tag">✦ 03 · Island Beachfront</span>
+                <span class="globe-card__rating">★ 4.99</span>
+              </div>
+              <div class="globe-card__media">
+                <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=700&h=480&fit=crop" alt="Golden Sands Bungalow" loading="lazy" />
+                <div class="globe-card__media-overlay"></div>
+                <div class="globe-card__sparkle">✦</div>
+                <span class="globe-card__view-btn">
+                  <span>Explore Details</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M7 17L17 7M7 7h10v10"/></svg>
+                </span>
+              </div>
+              <div class="globe-card__body">
+                <h3 class="globe-card__title">Golden Sands Bungalow</h3>
+                <p class="globe-card__subtitle">Havelock Island, Andaman &bull; Pristine Sands</p>
+                <div class="globe-card__specs">
+                  <span>2 Bungalows</span>
+                  <span>&bull;</span>
+                  <span>4 Guests</span>
+                  <span>&bull;</span>
+                  <span>Private Beach</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════ -->
+  <!-- EXPANDED SANCTUARY SHOWCASE MODAL (AI STUDIO STYLE) -->
+  <!-- ═══════════════════════════════════════════════ -->
+  <div class="property-modal" id="propertyModal" role="dialog" aria-modal="true" aria-hidden="true" aria-label="Sanctuary Detailed Showcase">
+    <div class="property-modal__backdrop" id="propertyModalBackdrop"></div>
+    
+    <div class="property-modal__dialog">
+      <!-- Modal Header Bar -->
+      <div class="property-modal__topbar">
+        <div class="property-modal__nav-pills" id="modalNavPills">
+          <button class="modal-nav-pill active" data-index="0" data-target="prop-azure">
+            <span>01</span> Azure Cliff Villa
+          </button>
+          <button class="modal-nav-pill" data-index="1" data-target="prop-emerald">
+            <span>02</span> Emerald Canopy
+          </button>
+          <button class="modal-nav-pill" data-index="2" data-target="prop-golden">
+            <span>03</span> Golden Sands
+          </button>
+        </div>
+
+        <button class="property-modal__close-btn" id="modalCloseBtn" aria-label="Close Sanctuary Showcase">
+          <span>✕ Close</span>
+          <kbd>ESC</kbd>
+        </button>
+      </div>
+
+      <!-- Property Detail Panels Container -->
+      <div class="property-modal__content">
+        
+        <!-- ─── PANEL 1: AZURE CLIFF VILLA ───────────── -->
+        <div class="property-panel active" id="prop-azure" data-property-name="Azure Cliff Villa">
+          <div class="dailyui-grid">
+            <div class="dailyui-media">
+              <div class="dailyui-hero-img-wrap">
+                <img class="dailyui-main-img" src="https://images.unsplash.com/photo-1582719508461-905c673771fd?w=1000&h=650&fit=crop" alt="Azure Cliff Villa ocean view" />
+                <div class="dailyui-badge-floating">
+                  <span class="star-gold">★</span> 4.98 &bull; Oceanfront
+                </div>
+                <button class="dailyui-play-trigger" data-video="azure" aria-label="Play virtual walkthrough tour">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="white"><polygon points="5,3 19,12 5,21"/></svg>
+                  <span>Virtual Tour (2:30)</span>
+                </button>
+                <div class="dailyui-zoom-hint">Click to enlarge</div>
+              </div>
+
+              <div class="dailyui-thumb-reel">
+                <div class="dailyui-thumb active">
+                  <img src="https://images.unsplash.com/photo-1582719508461-905c673771fd?w=240&h=160&fit=crop" alt="Ocean view terrace" />
+                </div>
+                <div class="dailyui-thumb">
+                  <img src="https://images.unsplash.com/photo-1602002418082-a4443e081dd1?w=240&h=160&fit=crop" alt="Master king suite" />
+                </div>
+                <div class="dailyui-thumb">
+                  <img src="https://images.unsplash.com/photo-1540541338287-41700207dee6?w=240&h=160&fit=crop" alt="Infinity edge pool" />
+                </div>
+                <div class="dailyui-thumb dailyui-thumb--video" data-video="azure">
+                  <img src="https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?w=240&h=160&fit=crop" alt="Video walkthrough thumbnail" />
+                  <div class="thumb-play-icon">▶</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="dailyui-details">
+              <div class="dailyui-meta-header">
+                <span class="dailyui-pill-category">01 &bull; Private Coastal Cliff Villa</span>
+                <span class="dailyui-status"><span class="status-dot"></span> Available for Inquiry</span>
+              </div>
+
+              <h3 class="dailyui-title">Azure Cliff Villa</h3>
+              <p class="dailyui-location">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                Coastal Highlands, North Goa
+              </p>
+
+              <p class="dailyui-desc">
+                Perched 180 feet above crashing turquoise waves, Azure Cliff Villa combines minimalist architectural design with panoramic ocean vistas. Complete with a cantilevered heated infinity pool, private butler service, and direct sunset orientation.
+              </p>
+
+              <div class="dailyui-specs-grid">
+                <div class="dailyui-spec-item">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/></svg>
+                  <div>
+                    <strong>4 Bedrooms</strong>
+                    <span>King Luxury Suites</span>
+                  </div>
+                </div>
+
+                <div class="dailyui-spec-item">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                  <div>
+                    <strong>8 Guests Max</strong>
+                    <span>Private Group / Family</span>
+                  </div>
+                </div>
+
+                <div class="dailyui-spec-item">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/></svg>
+                  <div>
+                    <strong>Private Pool</strong>
+                    <span>Cantilevered Infinity</span>
+                  </div>
+                </div>
+
+                <div class="dailyui-spec-item">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                  <div>
+                    <strong>Private Chef</strong>
+                    <span>Dedicated Host Included</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="dailyui-booking-action">
+                <div class="dailyui-rate-info">
+                  <span class="rate-label">Pricing &amp; Availability</span>
+                  <div class="rate-amount">Bespoke Rates on Request</div>
+                </div>
+
+                <a href="https://wa.me/1234567890?text=Hello!%20I'd%20like%20to%20inquire%20about%20booking%20Azure%20Cliff%20Villa.%20Could%20you%20please%20share%20availability%20and%20rates%3F" class="btn btn--whatsapp btn--lg" target="_blank" rel="noopener">
+                  <svg class="btn__icon" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                  <span>WhatsApp Inquiry</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ─── PANEL 2: EMERALD CANOPY RETREAT ──────── -->
+        <div class="property-panel" id="prop-emerald" data-property-name="Emerald Canopy Retreat">
+          <div class="dailyui-grid">
+            <div class="dailyui-media">
+              <div class="dailyui-hero-img-wrap">
+                <img class="dailyui-main-img" src="https://images.unsplash.com/photo-1618773928121-c32242e63f39?w=1000&h=650&fit=crop" alt="Emerald Canopy Retreat treehouse" />
+                <div class="dailyui-badge-floating">
+                  <span class="star-gold">★</span> 4.96 &bull; Rainforest
+                </div>
+                <button class="dailyui-play-trigger" data-video="emerald" aria-label="Play virtual walkthrough tour">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="white"><polygon points="5,3 19,12 5,21"/></svg>
+                  <span>Virtual Tour (3:15)</span>
+                </button>
+                <div class="dailyui-zoom-hint">Click to enlarge</div>
+              </div>
+
+              <div class="dailyui-thumb-reel">
+                <div class="dailyui-thumb active">
+                  <img src="https://images.unsplash.com/photo-1618773928121-c32242e63f39?w=240&h=160&fit=crop" alt="Canopy treehouse exterior" />
+                </div>
+                <div class="dailyui-thumb">
+                  <img src="https://images.unsplash.com/photo-1590490360182-c33d93a4eafa?w=240&h=160&fit=crop" alt="Rainforest deck" />
+                </div>
+                <div class="dailyui-thumb">
+                  <img src="https://images.unsplash.com/photo-1596178065887-1198b6148b2b?w=240&h=160&fit=crop" alt="Ayurvedic spa pavilion" />
+                </div>
+                <div class="dailyui-thumb dailyui-thumb--video" data-video="emerald">
+                  <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=240&h=160&fit=crop" alt="Retreat walkthrough thumbnail" />
+                  <div class="thumb-play-icon">▶</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="dailyui-details">
+              <div class="dailyui-meta-header">
+                <span class="dailyui-pill-category">02 &bull; Rainforest Canopy Treehouse</span>
+                <span class="dailyui-status"><span class="status-dot"></span> Available for Inquiry</span>
+              </div>
+
+              <h3 class="dailyui-title">Emerald Canopy Retreat</h3>
+              <p class="dailyui-location">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                Western Ghats, Wayanad, Kerala
+              </p>
+
+              <p class="dailyui-desc">
+                Elevated high within the misty biodiversity of the Western Ghats, this secluded retreat features open-air meditation decks, handcrafted sustainable timber chalets, and private healing wellness spas surrounded by ancient teak trees.
+              </p>
+
+              <div class="dailyui-specs-grid">
+                <div class="dailyui-spec-item">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/></svg>
+                  <div>
+                    <strong>3 Chalets</strong>
+                    <span>Elevated Canopy Suites</span>
+                  </div>
+                </div>
+
+                <div class="dailyui-spec-item">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                  <div>
+                    <strong>6 Guests Max</strong>
+                    <span>Nature Sanctuary</span>
+                  </div>
+                </div>
+
+                <div class="dailyui-spec-item">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
+                  <div>
+                    <strong>Ayurvedic Spa</strong>
+                    <span>Holistic Therapy Included</span>
+                  </div>
+                </div>
+
+                <div class="dailyui-spec-item">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/></svg>
+                  <div>
+                    <strong>Jungle Safaris</strong>
+                    <span>Private Naturalist Host</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="dailyui-booking-action">
+                <div class="dailyui-rate-info">
+                  <span class="rate-label">Pricing &amp; Availability</span>
+                  <div class="rate-amount">Bespoke Rates on Request</div>
+                </div>
+
+                <a href="https://wa.me/1234567890?text=Hello!%20I'd%20like%20to%20inquire%20about%20booking%20Emerald%20Canopy%20Retreat.%20Could%20you%20please%20share%20availability%20and%20rates%3F" class="btn btn--whatsapp btn--lg" target="_blank" rel="noopener">
+                  <svg class="btn__icon" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                  <span>WhatsApp Inquiry</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ─── PANEL 3: GOLDEN SANDS BUNGALOW ───────── -->
+        <div class="property-panel" id="prop-golden" data-property-name="Golden Sands Bungalow">
+          <div class="dailyui-grid">
+            <div class="dailyui-media">
+              <div class="dailyui-hero-img-wrap">
+                <img class="dailyui-main-img" src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=1000&h=650&fit=crop" alt="Golden Sands Bungalow beachfront" />
+                <div class="dailyui-badge-floating">
+                  <span class="star-gold">★</span> 4.99 &bull; Island Shores
+                </div>
+                <button class="dailyui-play-trigger" data-video="golden" aria-label="Play virtual walkthrough tour">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="white"><polygon points="5,3 19,12 5,21"/></svg>
+                  <span>Virtual Tour (2:45)</span>
+                </button>
+                <div class="dailyui-zoom-hint">Click to enlarge</div>
+              </div>
+
+              <div class="dailyui-thumb-reel">
+                <div class="dailyui-thumb active">
+                  <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=240&h=160&fit=crop" alt="Beachfront deck view" />
+                </div>
+                <div class="dailyui-thumb">
+                  <img src="https://images.unsplash.com/photo-1584132967334-10e028bd69f7?w=240&h=160&fit=crop" alt="Open air beach bungalow" />
+                </div>
+                <div class="dailyui-thumb">
+                  <img src="https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=240&h=160&fit=crop" alt="Sunset dining on the shore" />
+                </div>
+                <div class="dailyui-thumb dailyui-thumb--video" data-video="golden">
+                  <img src="https://images.unsplash.com/photo-1506929562872-bb421503ef21?w=240&h=160&fit=crop" alt="Island video tour thumbnail" />
+                  <div class="thumb-play-icon">▶</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="dailyui-details">
+              <div class="dailyui-meta-header">
+                <span class="dailyui-pill-category">03 &bull; Private Island Beachfront Lodge</span>
+                <span class="dailyui-status"><span class="status-dot"></span> Available for Inquiry</span>
+              </div>
+
+              <h3 class="dailyui-title">Golden Sands Bungalow</h3>
+              <p class="dailyui-location">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                Havelock Island Beachfront, Andaman Islands
+              </p>
+
+              <p class="dailyui-desc">
+                Step barefoot from your private timber deck directly onto powdery white sands. Designed with Scandinavian and tropical open-air elegance, Golden Sands offers private yacht charters, private reef snorkeling, and romantic shoreline dining.
+              </p>
+
+              <div class="dailyui-specs-grid">
+                <div class="dailyui-spec-item">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/></svg>
+                  <div>
+                    <strong>2 Bungalows</strong>
+                    <span>Direct Beach Access</span>
+                  </div>
+                </div>
+
+                <div class="dailyui-spec-item">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                  <div>
+                    <strong>4 Guests Max</strong>
+                    <span>Intimate Escape</span>
+                  </div>
+                </div>
+
+                <div class="dailyui-spec-item">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/></svg>
+                  <div>
+                    <strong>Private Beach</strong>
+                    <span>Pristine Shoreline</span>
+                  </div>
+                </div>
+
+                <div class="dailyui-spec-item">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                  <div>
+                    <strong>Yacht Excursions</strong>
+                    <span>Scuba &amp; Island Charters</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="dailyui-booking-action">
+                <div class="dailyui-rate-info">
+                  <span class="rate-label">Pricing &amp; Availability</span>
+                  <div class="rate-amount">Bespoke Rates on Request</div>
+                </div>
+
+                <a href="https://wa.me/1234567890?text=Hello!%20I'd%20like%20to%20inquire%20about%20booking%20Golden%20Sands%20Bungalow.%20Could%20you%20please%20share%20availability%20and%20rates%3F" class="btn btn--whatsapp btn--lg" target="_blank" rel="noopener">
+                  <svg class="btn__icon" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                  <span>WhatsApp Inquiry</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- In-Modal Prev/Next Navigation Controls -->
+      <div class="property-modal__footer-nav">
+        <button class="modal-cycle-btn modal-cycle-btn--prev" id="modalPrevPropBtn" aria-label="Previous sanctuary">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+          <span>Previous Sanctuary</span>
+        </button>
+        <span class="modal-cycle-indicator" id="modalCycleIndicator">01 / 03</span>
+        <button class="modal-cycle-btn modal-cycle-btn--next" id="modalNextPropBtn" aria-label="Next sanctuary">
+          <span>Next Sanctuary</span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════ -->
+  <!-- EXPERIENCES & AMENITIES                         -->
+  <!-- ═══════════════════════════════════════════════ -->
+  <section id="amenities" class="amenities section">
+    <div class="parallax-watermark" data-parallax-text="-0.1">EXPERIENCES</div>
+    <div class="container">
+      <div class="section__header reveal reveal--up">
+        <div class="section__pill">Bespoke Hospitality</div>
+        <h2 class="section__title">Tailored <em>Experiences</em></h2>
+        <p class="section__subtitle">Every detail is designed to enrich your stay and connect you deeply with the land.</p>
+      </div>
+
+      <div class="amenities__grid">
+        <div class="amenity-card reveal reveal--up" data-delay="0" data-parallax-layer="0.08">
+          <div class="amenity-card__icon-box">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M21 15c0 4.418-4.03 8-9 8S3 19.418 3 15c0-2.761 1.611-5.193 4.053-6.574A8.98 8.98 0 0112 7c1.795 0 3.465.536 4.947 1.426C19.389 9.807 21 12.239 21 15z"/><path d="M12 7V3m0 0L9 6m3-3l3 3"/></svg>
+          </div>
+          <h3 class="amenity-card__title">Architectural Infinity Pools</h3>
+          <p class="amenity-card__text">Temperature-controlled designer pools cantilevered to blend with surrounding horizons.</p>
+        </div>
+
+        <div class="amenity-card reveal reveal--up" data-delay="100" data-parallax-layer="-0.08">
+          <div class="amenity-card__icon-box">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
+          </div>
+          <h3 class="amenity-card__title">Ayurvedic &amp; Sound Healing</h3>
+          <p class="amenity-card__text">Ancient traditional herbal therapies, hot-stone rituals, and open-air guided sound baths.</p>
+        </div>
+
+        <div class="amenity-card reveal reveal--up" data-delay="200" data-parallax-layer="0.12">
+          <div class="amenity-card__icon-box">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 100 4 2 2 0 000-4z"/></svg>
+          </div>
+          <h3 class="amenity-card__title">Private Sommelier &amp; Dining</h3>
+          <p class="amenity-card__text">Chef-curated sea-to-table grills, organic farm delicacies, and sunset wine pairings.</p>
+        </div>
+
+        <div class="amenity-card reveal reveal--up" data-delay="300" data-parallax-layer="-0.1">
+          <div class="amenity-card__icon-box">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+          </div>
+          <h3 class="amenity-card__title">Private Wilderness Expeditions</h3>
+          <p class="amenity-card__text">Guided botanical walks, nocturnal jungle safaris, reef diving, and private yacht charters.</p>
+        </div>
+
+        <div class="amenity-card reveal reveal--up" data-delay="400" data-parallax-layer="0.1">
+          <div class="amenity-card__icon-box">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2z"/></svg>
+          </div>
+          <h3 class="amenity-card__title">Sunset Acoustic Evenings</h3>
+          <p class="amenity-card__text">Intimate bonfire sessions with live traditional sitar, flute, and jazz performances.</p>
+        </div>
+
+        <div class="amenity-card reveal reveal--up" data-delay="500" data-parallax-layer="-0.08">
+          <div class="amenity-card__icon-box">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+          </div>
+          <h3 class="amenity-card__title">24/7 Dedicated Concierge Host</h3>
+          <p class="amenity-card__text">Direct WhatsApp support for itinerary planning, private transfers, and bespoke requests.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════ -->
+  <!-- TESTIMONIALS SECTION                            -->
+  <!-- ═══════════════════════════════════════════════ -->
+  <section id="testimonials" class="testimonials section">
+    <div class="parallax-watermark" data-parallax-text="0.09">MEMORIES</div>
+    <div class="container">
+      <div class="section__header reveal reveal--up">
+        <div class="section__pill">Guest Experiences</div>
+        <h2 class="section__title">Unfiltered <em>Stories</em></h2>
+        <p class="section__subtitle">Read genuine reflections from travelers who made our sanctuaries their home.</p>
+      </div>
+
+      <div class="testimonials__grid">
+        <div class="testi-card reveal reveal--up" data-delay="0" data-parallax-layer="0.12">
+          <div class="testi-card__stars">★★★★★</div>
+          <p class="testi-card__quote">
+            "Azure Cliff Villa took our breath away. Waking up to the sunrise stretching across the Arabian Sea with absolute silence and pristine luxury is something we will never forget."
+          </p>
+          <div class="testi-card__author">
+            <div class="testi-card__avatar">RS</div>
+            <div>
+              <strong>Radhika &amp; Sanjay S.</strong>
+              <span>Stayed at Azure Cliff Villa</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testi-card reveal reveal--up" data-delay="150" data-parallax-layer="-0.1">
+          <div class="testi-card__stars">★★★★★</div>
+          <p class="testi-card__quote">
+            "The treehouse architecture at Emerald Canopy is pure genius. The healing sound bath on the deck, surrounded by morning mist and rainforest birds, was life-affirming."
+          </p>
+          <div class="testi-card__author">
+            <div class="testi-card__avatar">JL</div>
+            <div>
+              <strong>James &amp; Lisa M.</strong>
+              <span>Stayed at Emerald Canopy Retreat</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testi-card reveal reveal--up" data-delay="300" data-parallax-layer="0.14">
+          <div class="testi-card__stars">★★★★★</div>
+          <p class="testi-card__quote">
+            "Golden Sands is the benchmark for barefoot beachfront luxury. Having pristine white sand just steps from our timber deck, with a private chef grilling fresh lobster, was paradise."
+          </p>
+          <div class="testi-card__author">
+            <div class="testi-card__avatar">MT</div>
+            <div>
+              <strong>Meera &amp; Tarun K.</strong>
+              <span>Stayed at Golden Sands Bungalow</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════ -->
+  <!-- CTA BANNER                                      -->
+  <!-- ═══════════════════════════════════════════════ -->
+  <section class="cta-band">
+    <div class="cta-band__bg" data-parallax="0.35"></div>
+    <div class="cta-band__overlay"></div>
+    <div class="container cta-band__content reveal reveal--scale" data-parallax-content="0.15">
+      <div class="section__pill section__pill--light">Reserve Your Stay</div>
+      <h2>Ready to Begin Your Journey?</h2>
+      <p>Connect with our reservations concierge directly via WhatsApp for tailored dates, custom buyouts, and seasonal rates.</p>
+      
+      <a href="https://wa.me/1234567890?text=Hello!%20I'd%20like%20to%20plan%20a%20stay%20at%20Serenity%20Shores.%20Could%20you%20help%20me%20explore%20availability%20and%20curated%20rates%3F" class="btn btn--whatsapp btn--xl" target="_blank" rel="noopener">
+        <svg class="btn__icon" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        <span>Start Planning on WhatsApp</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════ -->
+  <!-- FOOTER                                          -->
+  <!-- ═══════════════════════════════════════════════ -->
+  <footer id="contact" class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a href="#hero" class="navbar__logo">
+            <span class="navbar__logo-icon">✦</span>
+            <span class="navbar__logo-text">Serenity<span>Shores</span></span>
+          </a>
+          <p>
+            An exclusive portfolio of three handcrafted architectural lodges in India's most extraordinary natural sanctuaries.
+          </p>
+          <div class="footer__socials">
+            <a href="#" aria-label="Instagram" class="footer__social">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </a>
+            <a href="#" aria-label="Facebook" class="footer__social">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+            </a>
+            <a href="#" aria-label="YouTube" class="footer__social">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M22.54 6.42a2.78 2.78 0 00-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 00-1.94 2A29 29 0 001 11.75a29 29 0 00.46 5.33A2.78 2.78 0 003.4 19.1c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 001.94-2 29 29 0 00.46-5.25 29 29 0 00-.46-5.33z"/><polygon points="9.75,15.02 15.5,11.75 9.75,8.48"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer__col">
+          <h4>Sanctuaries</h4>
+          <ul>
+            <li><a href="#properties" class="footer-prop-link" data-prop="azure-cliff">Azure Cliff Villa</a></li>
+            <li><a href="#properties" class="footer-prop-link" data-prop="emerald-canopy">Emerald Canopy Retreat</a></li>
+            <li><a href="#properties" class="footer-prop-link" data-prop="golden-sands">Golden Sands Bungalow</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="#about">Our Story</a></li>
+            <li><a href="#amenities">Experiences</a></li>
+            <li><a href="#testimonials">Guest Stories</a></li>
+            <li><a href="#">Sustainability Pledge</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <h4>Inquiries &amp; Concierge</h4>
+          <ul>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+              concierge@serenityshores.com
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+              +91 123 456 7890
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              Panaji, Goa, India
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p>&copy; 2026 Serenity Shores Luxury Lodges. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ═══════════════════════════════════════════════ -->
+  <!-- FLOATING WHATSAPP BUTTON                        -->
+  <!-- ═══════════════════════════════════════════════ -->
+  <a href="https://wa.me/1234567890?text=Hello!%20I'd%20like%20to%20inquire%20about%20your%20luxury%20lodges." class="fab-whatsapp" id="fabWhatsapp" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    <span class="fab-whatsapp__tooltip">Chat with Concierge</span>
+  </a>
+
+  <!-- ═══════════════════════════════════════════════ -->
+  <!-- LIGHTBOX / VIDEO MODAL                          -->
+  <!-- ═══════════════════════════════════════════════ -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image gallery lightbox">
+    <button class="lightbox__close" aria-label="Close lightbox">&times;</button>
+    <button class="lightbox__prev" aria-label="Previous image">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>
+    </button>
+    <div class="lightbox__content">
+      <img src="" alt="" />
+    </div>
+    <button class="lightbox__next" aria-label="Next image">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+    </button>
+    <div class="lightbox__counter"></div>
+  </div>
+
+  <script src="js/main.js?v=2"></script>
+</body>
+</html>
